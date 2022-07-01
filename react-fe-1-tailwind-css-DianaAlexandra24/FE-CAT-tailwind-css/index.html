@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS</title>
     <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../iconos/fontawesome/css/all.css">
 
   </head>
   <body>
-    <div class=" h-screen grid grid-cols-6 grid-rows [4rem_1fr]">
-      <header class="  col-span-full grid grid-cols-6 flex justify-between items-center " >
-          <div class=""><img src="./img/Screenshot_1.png"></div>
-          <div class="col-span-2 p-2 flex items-center justify-center">
-            <form class="w-full flex rounded-lg">
-              <label class="mx-3"for="">@</label>
-              <input type="text" class="grow bg-black">
-            </form>
-          </div>
-            
-          <div><button class="" type="button" href=""><b>Go Premium</b></button></div>
-          <div ><button class="" type="button" href=""><img src="./img/campanita.png"></button></div>
-          <div ><button class="" type="button" href=""><img src="./img/user.png"></button></div>
-          <div class=><button class=" text-white	 bg-red-600 rounded-none"type="button" href="">New Post</button></div>
+    <div class=" dark:bg-slate-800 h-screen grid grid-cols-6 grid-rows [4rem_1fr]">
+          <header class="dark:bg-slate-800  col-span-full grid grid-cols-6 flex justify-between items-center " >
+              <div class="col-span-1" ><img  src="./img/Screenshot_1.png"></div>
+              <div class="col-span-2 p-2 ">
+                <form class="w-full flex rounded-lg">
+                  <label class="mx-3 dark:text-white "for="">@</label>
+                  <input type="text" placeholder="Search" class="grow bg-slate-200	border-4 hover:border-t-8 ">
+                </form>
+              </div>
+                
+              <div><button class="dark:text-white hidden sm:block" type="button" href=""><b>Go Premium</b></button></div>
+              <div ><button class="hidden sm:block" type="button" href=""><img src="./img/campanita.png"></button></div>
+              <div ><button  class="hidden sm:block" type="button" href=""><img src="./img/user.png"></button></div>
+              <div ><button class=" dark:bg-slate-800 hidden sm:block text-white bg-red-600 rounded-none hover:bg-black"type="button" href="">New Post</button></div>
 
-    </header>
-      <aside class="col-span-1 row-start-2 	">
-        <ul class="space-y-2">
+
+
+        </header>
+        <aside class="col-span-1 row-start-2 md:flex 	">
+        <ul class="space-y-2 md:shrink-0 dark:hover text-red">
           <li>
             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                 <svg class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
@@ -52,7 +55,7 @@
             </a>
           </li>
           <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
-            <p class="uppercase">My communities</p>
+            <p class=" dark:text-white uppercase">My communities</p>
 
           <li>
             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -98,23 +101,23 @@
                 </a>
               </li>
           </ul>
-      </aside>
-        <main class=" col-span-3 row-start-2 bg-slate-600   " >
+       </aside>
+        <main class=" col-span-3 row-start-2    " >
           <div class="  grid grid-cols-3 p-2 m-2 rounded-lg mr-5 ml-5">
 
-            <button type="button" class=" py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white focus:red">
+            <button type="button" class=" hidden sm:block  hover:bg-black   py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white hover:underline decoration-red">
               Recent
             </button>
-            <button type="button" class="  py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white hover:underline decoration-red">
+            <button type="button" class="hidden sm:block  hover:bg-black   py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white hover:underline decoration-red">
               Most Liked
             </button>
-            <button type="button" class="  py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white hover:underline decoration-red">
+            <button type="button" class=" hidden sm:block  hover:bg-black py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white hover:underline decoration-red">
               Most Answered
             </button>
           </div>
 
 
-          <div class=" bg-white grid grid-rows-3 p-2 m-2 rounded-lg mr-5 ml-5	">
+          <div class=" bg-white grid grid-rows-3 p-2 m-2 rounded-lg mr-5 ml-5 hidden sm:block 	">
             <header class="flex justify-between	 items-center gap-2 ">
               <img  src="./img/avatar-704fe78a2a44003b7b842922546fcedd.jpg" class= "w-10 h-10 rounded-full" >
               <div class="p-2 grow	"> <p class="font-bold">Dries Vicent</p>
@@ -138,14 +141,39 @@
             </footer>
 
           </div>
-          <div class="tajeta2 flex justify-center">
+
+          <div class=" bg-white grid grid-rows-3 p-2 m-2 rounded-lg mr-5 ml-5	hidden sm:block  ">
+            <header class="flex justify-between	 items-center gap-2 ">
+              <img  src="./img/avatar-8fb5e4d7178e5a3c921a0b754b0b88e2.jpg" class= "w-10 h-10 rounded-full" >
+              <div class="p-2 grow	"> <p class="font-bold">Lindsday Walton</p>
+                <p>5 January</p>
+              </div>
+              <butto><i>@</i></button>
+            </header>
+            
+            <div class="card">
+              <h5 class="font-bold">Titulo</h5>
+              <p class="font-normal text-gray-700 dark:text-gray-400"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+            <footer class="flex justify-between items-center">
+              <div class="">
+                <button><i>1</i></button>
+                <button><i>2</i></button>
+                <button><i>3</i></button>
+                <button><i>4</i></button>
+              </div>
+              
+            </footer>
+
+          </div>
+          
             
         
 
         </main>
           
 
-      <aside class=" col-span-4 row-start-2 bg-black"></aside>
+        <aside class=" col-span-4 row-start-2 bg-black"></aside>
     </div>
   </body>
   
